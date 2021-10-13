@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+main(void) {
+ int option , number1 , number2 ;
+  printf("enter 1 for addition");
+  printf("\nenter 2 for substraction");
+  printf("\nenter 3 for multiplication");
+  printf("\nenter 4 for division ");
+  scanf("%d", &option);
+  if (option == 1)
+  {
+    printf("enter a number ");
+    scanf("%d", &number1 );
+    printf("enter another number ");
+    scanf("%d", &number2);
+    printf("\n ADD = %d ", number1+number2);
+    }
+  else if (option == 2)
+  {
+    printf("enter a number ");
+    scanf("%d",&number1);
+    printf("enter another number ");
+    scanf("%d",&number2);
+    printf("\n SUB = %d", number1-number2);
+  }
+  else if (option == 3)
+  {
+    printf("enter a number ");
+    scanf("%d",& number1);
+    printf("enter another number ");
+    scanf("%d", &number2);
+    printf("\n MUL = %d", number1*number2);
+  }
+  else if (option == 4 )
+  {
+    printf("enter a number ");
+    scanf("%d", &number1);
+    printf("enter another number ");
+    scanf("%d", &number2);
+    printf("\n DIV = %d",number1/number2);
+  }
+  else 
+  {
+    printf("INVALID INPUT");
+  }
